@@ -1,0 +1,105 @@
+.gradient-background {
+    background: linear-gradient(300deg, #e92ea4, #ff4c68, #850F8D);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.title-text {
+    --bg-size: 100%;
+    --color-one: hsl(341, 90%, 53%);
+    --color-two: hsl(320, 83%, 58%);
+    font-family: sans-serif;
+    font-size: clamp(3rem);
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+      )
+      0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .boujee-text {
+      animation: move-bg 8s linear infinite;
+    }
+    @keyframes move-bg {
+      to {
+        background-position: var(--bg-size) 0;
+      }
+    }
+  }
+  .intro{
+    color: aliceblue;
+  }
+  .title-text2 {
+    --bg-size: 100%;
+    --color-one: hsl(282, 90%, 53%);
+    --color-two: hsl(316, 83%, 58%);
+    font-family: sans-serif;
+    font-size: clamp(3rem);
+    background: linear-gradient(
+        90deg,
+        var(--color-one),
+        var(--color-two),
+        var(--color-one)
+      )
+      0 0 / var(--bg-size) 100%;
+    color: transparent;
+    background-clip: text;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .boujee-text {
+      animation: move-bg 8s linear infinite;
+    }
+    @keyframes move-bg {
+      to {
+        background-position: var(--bg-size) 0;
+      }
+    }
+  }
+  .intro{
+    color: aliceblue;
+  }
+  .company{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gradient-background2 {
+    background: linear-gradient(300deg, #e92ea4, #ff4c68, #850F8D);
+    background-size:cover;
+    width: 100vw;
+    height: 100vh;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.contact{
+    display: block;
+}
